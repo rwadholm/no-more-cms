@@ -1,13 +1,14 @@
 <?php 
 session_start();
-
+error_reporting(0);
 $siteRoot = '/';
 $adminEmail = 'youremail@website.com';
 $adminUsername = 'rwadholm';
 $adminPassword = 'SomePa55w0rdThat15K1nd0Fhard!';
 $pageName = $_REQUEST['page'];
-$pageFix = preg_replace('/\.(.*)/','',$pageName);
-$page = preg_replace('/\//','_',$pageFix);
+$page = preg_replace('/\//','___',$pageName);
+$page = preg_replace('/\.(.*)$/','',$page);
+$page = preg_replace('/(.*)___$/','$1', $page);
 $editID = $_REQUEST['id'];
 $editValue = $_REQUEST['value'];
 $deletePage = $_REQUEST['deletePage'];
@@ -362,7 +363,7 @@ if($editID){
 	<div id="outsideWrapper">
         <header>  
             <div id="logo">
-                <a href="<?php echo $siteRoot ?>"><img src="/img/logo.png" style="margin-right: 12px; display: inline-block; position: relative; top: -2px;" alt="NM CMS" /><?php echo getContent('site_title', 'index'); ?></a>
+                <a href="<?php echo $siteRoot ?>"><img src="<?php echo $siteRoot ?>img/logo.png" style="margin-right: 12px; display: inline-block; position: relative; top: -2px;" alt="NM CMS" /><?php echo getContent('site_title', 'index'); ?></a>
             </div>
             <nav id="topNav">
                 <?php

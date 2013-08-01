@@ -1137,7 +1137,8 @@ $.editable.addInputType('wysiwyg', {
 
 
 $(document).ready(function() {
-	var page = $('body').attr('id');	
+	var pageBody = $('body').attr('id');
+	page = '/'+ pageBody;	
 	
 	$('a#editTitleBtn').live('click', function(e){
 		e.preventDefault();
