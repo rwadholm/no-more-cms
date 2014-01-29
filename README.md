@@ -3,7 +3,7 @@ No More CMS
 
 No More CMS (No More Content Management System) is a site that is editable from the front end. You can view a working No More CMS site at http://nm.bob.wadholm.com. 
 
-To edit a No More CMS site, just log in and click on the text you want to edit. To create a page, put the desired URL in your browser's address bar, and go to the page. When you get there, start editing and save when you are finished — you now have a new Web page.  
+To edit a No More CMS site, just log in and click on the text or media you want to edit. To create a page, put the desired URL in your browser's address bar, and go to the page. When you get there, start editing and save when you are finished — you now have a new Web page. No More CMS has a click-to-edit WYSIWYG, html code editing, and image file uploader built right in.  
 
 Solutions like WordPress are perfect for most users. Drupal is great for enterprise-size sites and applications. But some users need a solution that makes them feel more comfortable. Something without an administrator back-end. Something with fewer functions, without the bells and whistles, but that allows them to feel like they are in control. Enter No More CMS. No More CMS allows website administrators to login, click on text, and start editing in a fully functional and visual way, and to also view and edit the code behind the content from within the browser (for those of us who think that code is poetry). 
 
